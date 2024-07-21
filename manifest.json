@@ -2,16 +2,21 @@
   "manifest_version": 3,
   "name": "Medium Extended",
   "version": "1.0",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting", "tabs", "notifications"],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_title": "Medium Extended"
+    "default_title": "Medium Extended",
+    "default_icon": {
+      "16": "icons/inactive_icon.png",
+      "48": "icons/inactive_icon.png",
+      "128": "icons/inactive_icon.png"
+    }
   },
   "icons": {
-    "48": "icons/icon48.png",
-    "96": "icons/icon96.png",
-    "192": "icons/icon192.png"
+    "16": "icons/inactive_icon.png",
+    "48": "icons/inactive_icon.png",
+    "128": "icons/inactive_icon.png"
   }
 }
